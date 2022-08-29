@@ -46,7 +46,7 @@
 
 // if (payment >= 100) {
 //     discount = 2;
-// } else (payment < 1000) 
+// } else (payment < 1000)
 
 // if (payment >= 1000) {
 //     discount = 5;
@@ -59,5 +59,13 @@
 // }
 
 // console.log('Оформляем заказ на сумму ' + payment + ' ' + 'со скидкой' + ' ' + discount + '%')
+
+
+
+// let weight = '88.3';
+// let height = '1.75';
+// const bmi = weight / (height * height);
+// console.log(bmi.toFixed(1))
+
 
 
