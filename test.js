@@ -1,3 +1,4 @@
+
 // console.log(Math.PI.toFixed(2))
 // console.log(Number(Math.PI.toFixed(2)))
 
@@ -14,9 +15,9 @@
 // console.log(Math.random() * (max - min) + min)
 
 
-// let msg = prompt('введите ваше имя');
-// const yn = ('ваше имя:');
-// console.log(yn, msg);
+// let msg = prompt('Введите ваше имя');
+// const userName = ('Ваше имя:');
+// console.log(userName, msg);
 
 
 
@@ -32,6 +33,25 @@
 // if (balance > payment) {
 //     balance - payment
 //     console.log('На счету осталось ' + result + ' кредитов')
+//     console.log(succesMessage)
+// } else {
+//     console.log('На счету недостаточно средств для проведения операции!');
+// }
+
+
+
+// let balance = 1000;
+// const payment = 200;
+// let result = balance - payment;
+// const message = `Общая стоимость заказа ${payment} кредитов. Проверяем кол-во доступных средств на счету.`;
+// const succesMessage = "Операция завершена";
+
+// console.log('На вашем счету ' + balance + ' кредитов')
+// console.log(message)
+
+// if (balance > payment) {
+//     balance - payment
+// console.log(`На счету осталось ${result} кредитов`);
 //     console.log(succesMessage)
 // } else {
 //     console.log('На счету недостаточно средств для проведения операции!');
@@ -57,8 +77,19 @@
 // } else (payment < 100); {
 //     discount;
 // }
+// console.log(`Оформляем заказ на сумму ${payment} со скидкой ${discount}%`);
 
-// console.log('Оформляем заказ на сумму ' + payment + ' ' + 'со скидкой' + ' ' + discount + '%')
+
+
+// const totalSpent = 2000;
+// let payment = 5000;
+// let discount = 0;
+// let message;
+
+// (payment >= 100) ? discount = 2 : (payment < 1000);
+// (payment >= 1000) ? discount = 5 : (payment <= 5000);
+// (payment >= 5000) ? discount = 10 : (payment < 100);
+// console.log(`Оформляем заказ на сумму ${payment} со скидкой ${discount}%`)
 
 
 
@@ -91,6 +122,14 @@
 
 
 
+// let hours = 14;
+// let minutes = 0;
+// let result;
+// (minutes === 0) ? result = `${hours} г.` : result = `${hours} г. ${minutes} хв.`;
+// console.log(result)
+
+
+
 // const userNumber = prompt('Введите число')
 // let message;
 
@@ -115,6 +154,7 @@
 // let isLogIn = false;
 // let message;
 // let registerSucces = false;
+
 // if (registerUserPassword.length >= 8) {
 //     registerSucces = true;
 //     isLogIn = false;
@@ -124,6 +164,9 @@
 //     registerSucces = false;
 //     isLogIn = false;
 // }
+
+// (registerUserPassword.length >= 8) ? registerSucces = true & console.log(message = 'Вы успешно создали аккаунт!') : console.log(message = 'Ваш юзернейм или пароль слишком короткий!'); registerSucces = false;
+
 
 // let inputUserName;
 // let inputUserPassword;
@@ -140,7 +183,7 @@
 //     console.log(message = 'Юзернейм или пароль неверен! Попробуйте еще раз.')
 //     isLogIn === false;
 // }
-// НЕ РАБОТАЕТ--------------------------------------------------------------------------------------------------------------------------------
+// НЕ РАБОТАЕТ-------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -159,6 +202,13 @@
 
 
 
+// const a = 120;
+// const b = 180;
+
+// (a > 100 && b > 100) ? (a > b) ? console.log(a) : console.log(b) : console.log(b + 512);
+
+
+
 // let link = 'https://my-site.com/about';
 
 // if (link.endsWith('t')) {
@@ -174,13 +224,6 @@
 //     link = `${link}/`
 // }
 // console.log(link)
-
-
-
-// const a = 120;
-// const b = 180;
-
-// (a > 100 && b > 100) ? (a > b) ? console.log(a) : console.log(b) : console.log(b + 512);
 
 
 
