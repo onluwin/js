@@ -59,27 +59,27 @@
 
 
 
-let totalSpent = 2000;
-let payment = 134;
-let discount = 0;
-let message;
+// let totalSpent = 2000;
+// let payment = 134;
+// let discount = 0;
+// let message;
 
-if (payment >= 100 && payment < 1000) {
-    discount = 0.02;
-    console.log('Бронзовый партнер, скидка 2%');
-} else if (payment >= 1000 && payment <= 5000) {
-    discount = 0.05;
-    console.log('Серебрянный партнер, скидка 5%');
-} else if (payment >= 5000) {
-    discount = 0.10;
-    console.log('Золотой партнер, скидка 10%');
-} else {
-    console.log('У вас еще нет партнерской скидки');
-}
-payment = payment - payment * discount;
-console.log(`Оформляем заказ на сумму ${payment} со скидкой ${discount}%`);
-totalSpent += payment;
-console.log(message = `Общая сумма потраченная в магазине: ${totalSpent}`);
+// if (payment >= 100 && payment < 1000) {
+//     discount = 0.02;
+//     console.log('Бронзовый партнер, скидка 2%');
+// } else if (payment >= 1000 && payment <= 5000) {
+//     discount = 0.05;
+//     console.log('Серебрянный партнер, скидка 5%');
+// } else if (payment >= 5000) {
+//     discount = 0.10;
+//     console.log('Золотой партнер, скидка 10%');
+// } else {
+//     console.log('У вас еще нет партнерской скидки');
+// }
+// payment = payment - payment * discount;
+// console.log(`Оформляем заказ на сумму ${payment} со скидкой ${discount}%`);
+// totalSpent += payment;
+// console.log(message = `Общая сумма потраченная в магазине: ${totalSpent}`);
 
 
 
