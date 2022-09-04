@@ -147,43 +147,40 @@
 // }
 
 
+let userName;
+let userPassword;
 
-// console.log('Здравствуйте!');
-// let registerUserName = prompt('Введите юзернейм.');
-// let registerUserPassword = prompt('Введите пароль. (8 или больше символов)');
-// let isLogIn = false;
-// let message;
-// let registerSucces = false;
+userName = prompt('Введите юзернейм.');
 
-// if (registerUserPassword.length >= 8) {
-//     registerSucces = true;
-//     isLogIn = false;
-//     console.log(message = 'Вы успешно создали аккаунт!');
-// } else {
-//     console.log(message = 'Ваш юзернейм или пароль слишком короткий!');
-//     registerSucces = false;
-//     isLogIn = false;
-// }
+function newUser() {
+    
+    userPassword = prompt("Введите пароль длиннее 8-х символов");
+    if (userPassword.length < 8) {
+        console.log("Короткий пароль");
+        return newUser();
+    }
+}
+newUser();
 
-// (registerUserPassword.length >= 8) ? registerSucces = true & console.log(message = 'Вы успешно создали аккаунт!') : console.log(message = 'Ваш юзернейм или пароль слишком короткий!'); registerSucces = false;
-
-
-// let inputUserName;
-// let inputUserPassword;
-
-// if (registerSucces == true && isLogIn === false) {
-//     inputUserName = prompt('Ваш юзернейм(вход)');
-//     inputUserPassword = prompt('Ваш пароль(вход)');
-// }
-// if (registerSucces === true && inputUserName === registerUserName && inputUserPassword === registerUserPassword) {
-//     isLogIn === true;
-//     console.log(message = 'Вы успешно вошли в аккаунт!')
-// }
-// if (registerSucces === true  && inputUserName !== registerUserName && inputUserPassword !== registerUserPassword) {
-//     console.log(message = 'Юзернейм или пароль неверен! Попробуйте еще раз.')
-//     isLogIn === false;
-// }
-// НЕ РАБОТАЕТ-------------------------------------------------------------------------------------------------------------------------
+function inputName() {
+    let loginUserName = prompt('Ваш юзернейм(вход)');
+ 
+    if (userName !== loginUserName ) {
+        console.log("Не верный логин");
+        return inputName();
+    }
+}
+inputName();
+function inputPassword() {
+    
+    let loginUserPassword = prompt('Ваш пароль(вход)');
+    if (userPassword !== loginUserPassword ) {
+        console.log("Не верный пароль");
+        return inputPassword();
+    }
+    console.log("Вы вошли в аккаунт");
+}
+inputPassword();
 
 
 
