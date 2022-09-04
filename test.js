@@ -59,25 +59,27 @@
 
 
 
-// const totalSpent = 2000;
-// let payment = 99;
-// let discount = 0;
-// let message;
+let totalSpent = 2000;
+let payment = 134;
+let discount = 0;
+let message;
 
-// if (payment >= 100) {
-//     discount = 2;
-// } else (payment < 1000)
-
-// if (payment >= 1000) {
-//     discount = 5;
-// } else (payment <= 5000);
-
-// if (payment >= 5000) {
-//     discount = 10;
-// } else (payment < 100); {
-//     discount;
-// }
-// console.log(`Оформляем заказ на сумму ${payment} со скидкой ${discount}%`);
+if (payment >= 100 && payment < 1000) {
+    discount = 0.02;
+    console.log('Бронзовый партнер, скидка 2%');
+} else if (payment >= 1000 && payment <= 5000) {
+    discount = 0.05;
+    console.log('Серебрянный партнер, скидка 5%');
+} else if (payment >= 5000) {
+    discount = 0.10;
+    console.log('Золотой партнер, скидка 10%');
+} else {
+    console.log('У вас еще нет партнерской скидки');
+}
+payment = payment - payment * discount;
+console.log(`Оформляем заказ на сумму ${payment} со скидкой ${discount}%`);
+totalSpent += payment;
+console.log(message = `Общая сумма потраченная в магазине: ${totalSpent}`);
 
 
 
@@ -147,40 +149,41 @@
 // }
 
 
-let userName;
-let userPassword;
 
-userName = prompt('Введите юзернейм.');
+// let userName;
+// let userPassword;
 
-function newUser() {
+// userName = prompt('Введите юзернейм.');
+
+// function newUser() {
     
-    userPassword = prompt("Введите пароль длиннее 8-х символов");
-    if (userPassword.length < 8) {
-        console.log("Короткий пароль");
-        return newUser();
-    }
-}
-newUser();
+//     userPassword = prompt("Введите пароль длиннее 8-х символов");
+//     if (userPassword.length < 8) {
+//         console.log("Короткий пароль");
+//         return newUser();
+//     }
+// }
+// newUser();
 
-function inputName() {
-    let loginUserName = prompt('Ваш юзернейм(вход)');
+// function inputName() {
+//     let loginUserName = prompt('Ваш юзернейм(вход)');
  
-    if (userName !== loginUserName ) {
-        console.log("Не верный логин");
-        return inputName();
-    }
-}
-inputName();
-function inputPassword() {
+//     if (userName !== loginUserName ) {
+//         console.log("Не верный логин");
+//         return inputName();
+//     }
+// }
+// inputName();
+// function inputPassword() {
     
-    let loginUserPassword = prompt('Ваш пароль(вход)');
-    if (userPassword !== loginUserPassword ) {
-        console.log("Не верный пароль");
-        return inputPassword();
-    }
-    console.log("Вы вошли в аккаунт");
-}
-inputPassword();
+//     let loginUserPassword = prompt('Ваш пароль(вход)');
+//     if (userPassword !== loginUserPassword ) {
+//         console.log("Не верный пароль");
+//         return inputPassword();
+//     }
+//     console.log("Вы вошли в аккаунт");
+// }
+// inputPassword();
 
 
 
@@ -308,6 +311,137 @@ inputPassword();
 // }
 // console.log(message)
 // } while (userInput !== 'Админ' && adminPassword !== "Я админ")
+
+
+
+// const stars = 4;
+// let price;
+
+// switch (stars) {
+//     case 1:
+//         price = 20;
+//         break;
+//     case 2:
+//         price = 30;
+//         break;
+//     case 3:
+//         price = 50;
+//         break;
+//     case 4:
+//         price = 70;
+//         break;
+//     case 5:
+//         price = 120;
+//         break;
+
+//     default: console.log('Такого кол-ва звёзд нет.');
+// }
+// console.log(price)
+
+
+
+// const stars = 2;
+// let price;
+
+// switch (stars) {
+//     case 1:
+//     case 2:
+//         price = 20;
+//         break;
+//     case 3:
+//     case 4:
+//         price = 50;
+//         break;
+//     case 5:
+//         price = 120;
+//         break;
+
+//     default: console.log('Такого кол-ва звёзд нет.');
+// }
+// console.log(price)
+
+
+
+// let option = 1;
+// let message;
+
+// switch (option) {
+//     case 1:
+//         message = 'Вы можете забрать товар завтра с 12:00 в нашем офисе'
+//         break;
+//     case 2:
+//         message = 'Курьер доставит заказ завтра с 9:00 до 18:00'
+//         break;
+//     case 3:
+//         message = 'Посылка будет отправлена сегодня'
+//         break;
+
+//     default:
+//         message = 'Вам перезвонит менеджер'
+// }
+// console.log(message);
+
+
+
+// const employees = 6;
+// const max = 5000;
+// const min = 500;
+// let salary = Math.random() * (max - min) + min;
+// salary = salary.toFixed(0)
+// const totalSalary = salary * employees;
+
+// console.log(totalSalary);
+
+
+
+// const employees = 6;
+// const max = 5000;
+// const min = 500;
+// let salary;
+
+// for (let i = 1; i <= employees; i += 1) {
+//     salary = Math.round(Math.random() * (max - min) + min);
+//     // console.log(`ЗП работника ${i} - ${salary}`);
+// }
+// let totalSalary = salary * employees;
+// console.log(totalSalary);
+
+
+
+// for (let i = 10; i >= 1; i -= 1) {
+//     console.log(i);
+// }
+
+
+
+// const max = 13;
+// const min = 6;
+// let total = 0;
+
+// for (let i = min; i <= max; i += 1) {
+//     if (i % 2 === 0) {
+//         console.log(`чётное: ${i}`);
+//         total += i;
+        
+//     }
+// }
+// console.log(`total: ${total}`);
+
+
+
+// const max = 13;
+// const min = 5;
+// let total = 0;
+
+// for (let i = min; i <= max; i += 1) {
+//     if (i % 2 !== 0) {
+//         console.log(`Не чётное: ${i}`);
+//         total += i;
+//     } else {
+//         console.log(`Чётное: ${i}`);
+//     }
+// }
+// console.log(`total: ${total}`);
 
 
 
