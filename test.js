@@ -15,9 +15,16 @@
 // console.log(Math.random() * (max - min) + min)
 
 
+
 // let msg = prompt('Введите ваше имя');
 // const userName = ('Ваше имя:');
 // console.log(userName, msg);
+
+
+
+// const userName = prompt('Введите ваше имя');
+// const message = 'Ваше имя:';
+// console.log(message, userName);
 
 
 
@@ -442,6 +449,138 @@
 //     }
 // }
 // console.log(`total: ${total}`);
+
+
+
+// const cart = [54, 28, 105, 78, 92, 17, 120];
+// let total = 0;
+
+// for (let i = 0; i < cart.length; i += 1) {
+//     console.log(cart[i]);
+//     total += cart[i]
+// }
+// console.log(`Total: ${total}`);
+
+
+
+// const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 11];
+// let total = 0;
+
+// for (const number of numbers) {
+//     if (number % 2 === 0) {
+//         total += number;
+//     }
+// }
+// console.log(`Total: ${total}`);
+
+
+
+// const logins = ['m4ngoDoge', 'kiwidab3st', 'poly1scute', 'aj4xth3m4n'];
+// const loginToFind = 'poly1scute';
+// let message = `Пользователь ${loginToFind} не найден`;
+
+// for (const login of logins) {
+//     if (login === loginToFind) {
+//         message = `Пользователь ${loginToFind} найден`
+//         break;
+//     }
+// }
+// console.log(message);
+
+
+
+// const logins = ['m4ngoDoge', 'kiwidab3st', 'poly1scute', 'aj4xth3m4n'];
+// const loginToFind = 'poly1scute';
+// const message = logins.includes(loginToFind) ? `Пользователь ${loginToFind} найден` : `Пользователь ${loginToFind} не найден`;
+
+// console.log(message);
+
+
+
+// const numbers = [21, 83, 43, 92, 2, 12, 24]
+// let smallestNumber = numbers[0];
+
+// for (const number of numbers) {
+//     if (number < smallestNumber) {
+//         smallestNumber = number;
+//     }
+// }
+// console.log(smallestNumber);
+
+
+
+// const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax']
+// let string = ''
+
+// // for (let i = 0; i < friends.length; i += 1) {
+// //     console.log(friends[i]);
+// // }   // НЕ ЗНАЮ ЗАЧЕМ)))
+
+// string = friends.join(', ')
+// console.log(string);
+
+
+
+// let string = 'JavaScript';
+// let newString = '';
+// let message = '';
+
+// string = string.split('');
+// for (const letter of string) {
+//     if (letter === letter.toLowerCase()) {
+//         newString += letter.toUpperCase();
+//         console.log(message = `Эта буква в нижнем регистре - ${letter}`);
+//     } else if (letter !== letter.toLowerCase()) {
+//         letter.toLowerCase();
+//         newString += letter.toLowerCase();
+//         console.log(message = `Эта буква в верхнем регистре - ${letter}`);
+//     }
+// }
+// console.log('Обычная строка:',string.join(''));
+// console.log(`Инверсия: ${newString}`);
+
+
+
+// let string = 'JavaScript';
+// let inverseString = '';
+// let message = '';
+
+// for (const letter of string) {
+//     console.log(letter);
+//     inverseString += letter === letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase();
+// }
+// console.log('Обычная строка:', string);
+// console.log('Инверсия:', inverseString);
+
+
+
+// const title = 'Top 10 benefits of React framework';
+
+// title = title.split(' ');
+// title = title.split(' ');
+// title = title.join('-');
+
+// console.log(title);
+
+
+
+// const title = 'Top 10 benefits of React framework';
+// const slug = title.toLowerCase().split(' ').join('-')
+
+// console.log(slug);
+
+
+
+// const numbers1 = [5, 10, 15, 20];
+// const numbers2 = [10, 20, 30];
+// const numbers = numbers1.concat(numbers2);
+// let sum = 0;
+
+// console.log(numbers);
+// for (const number of numbers) {
+//     sum += number;
+// }
+// console.log('Общая сумма чисел:', sum);
 
 
 
