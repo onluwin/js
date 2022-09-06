@@ -584,3 +584,69 @@
 
 
 
+// let genres = ['Jazz', 'Blues'];
+
+// genres.push("rock'n'roll");
+// console.log(genres);
+// console.log(genres[0]);
+// console.log(genres[genres.length - 1]);
+// genres.shift();
+// console.log(genres);
+// genres.unshift('Country', 'Reggy')
+// console.log(genres);
+
+
+
+// const genres = ['Juzz', 'Blues', "Rock'n'roll", 'Country', 'Reggy'];
+// let longestGenre = genres[0];
+
+// for (const genre of genres) {
+//     if (genre.length > longestGenre.length) {
+//         longestGenre = genre;
+//     }
+// }
+// console.log('Самый длинный жанр: ',longestGenre);
+
+
+
+// let values = '8 11'
+// let square = 0;
+
+// values = values.split(' ')
+// square = values[0] * values[1];
+// console.log(square);
+
+
+
+// let names = 'Jacob, William, Solomon, Artemis';
+// let phones = '0996642376,0558883451,0773361296,0445326781';
+
+// names = names.split(', ')
+// phones = phones.split(',')
+// console.log(names);
+// console.log(phones);
+// for (let i = 0; i < names.length; i += 1) {
+//     console.log(`${names[i]} - ${phones[i]}`);
+// }
+
+
+
+// let string = 'Welcome to the fututre!';
+// string = string.split('');
+// const reverseStringToArray = string.reverse()
+// const reverseString = reverseStringToArray.join('')
+
+// console.log(reverseString);
+
+
+
+// const employees = ['Denis', 'Denis', 'Shaw', 'Watkins', 'Watkins', 'Ray'];
+// let filteredEmployees = [];
+
+// for (let i = 0; i < employees.length; i += 1) {
+//     console.log(employees[i]);
+//     if (i === employees.indexOf(employees[i])) {
+//         filteredEmployees.push(employees[i])
+//     }
+// }
+// console.log(filteredEmployees);
