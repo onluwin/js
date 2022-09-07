@@ -491,6 +491,55 @@
 
 // const logins = ['m4ngoDoge', 'kiwidab3st', 'poly1scute', 'aj4xth3m4n'];
 // const loginToFind = 'poly1scute';
+// let message = `Пользователь ${loginToFind} не найден`;
+
+// for (const login of logins) {
+//     if (login === loginToFind) {
+//         message = `Пользователь ${loginToFind} найден`
+//         break;
+//     }
+// }
+// console.log(message);
+
+
+
+// const findLogin = function findLogin(logins, loginToFind) {
+//     let message = `Пользователь ${loginToFind} не найден`
+//     for (const i of logins) {
+//         if (loginToFind === i) {
+//             message = `Пользователь ${loginToFind} найден`
+//         }
+//     }
+//     return message;
+// }
+// console.log(findLogin(['max', 'onluwin'], 'onluwin'));
+
+
+
+// const logins = ['m4ngoDoge', 'kiwidab3st', 'poly1scute', 'aj4xth3m4n', 'onluwin'];
+// const findLogin = function findLogin(allLogins, loginToFind) {
+//     for (const login of allLogins) {
+//         if (loginToFind === login) {
+//             return `Пользователь ${loginToFind} найден в базе данных`
+//         }
+//     }
+//     return `Пользователь ${loginToFind} не найден в базе данных`;;
+// }
+// console.log(findLogin(logins, 'onluwin'));
+
+
+
+// const logins = ['m4ngoDoge', 'kiwidab3st', 'poly1scute', 'aj4xth3m4n', 'onluwin'];
+
+// const findLogin = function findLogin(allLogins, loginToFind) {
+//     return (logins.includes(loginToFind)) ? `Пользователь ${loginToFind} найден в базе данных` : `Пользователь ${loginToFind} не найден в базе данных`;
+// }
+// console.log(findLogin(logins, 'onluwin'));
+
+
+
+// const logins = ['m4ngoDoge', 'kiwidab3st', 'poly1scute', 'aj4xth3m4n'];
+// const loginToFind = 'poly1scute';
 // const message = logins.includes(loginToFind) ? `Пользователь ${loginToFind} найден` : `Пользователь ${loginToFind} не найден`;
 
 // console.log(message);
@@ -506,6 +555,19 @@
 //     }
 // }
 // console.log(smallestNumber);
+
+
+
+// const findSmallestNumber = function findSmallestNumber(arrayNumbers) {
+//     let smallestNumber = arrayNumbers[0]
+//     for (const number of arrayNumbers) {
+//         if (number < smallestNumber) {
+//             smallestNumber = number;
+//         }
+//     }
+//     return `Smallest number: ${smallestNumber}`;
+// }
+// console.log(findSmallestNumber([1, 5, 8, -2, -59, 192]));
 
 
 
@@ -543,7 +605,6 @@
 
 // let string = 'JavaScript';
 // let inverseString = '';
-// let message = '';
 
 // for (const letter of string) {
 //     console.log(letter);
@@ -554,13 +615,52 @@
 
 
 
-// const title = 'Top 10 benefits of React framework';
+// for (const letter of string) {
+//     console.log(letter);
+//     inverseString += letter === letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase();
+// }
+// console.log('Обычная строка:', string);
+// console.log('Инверсия:', inverseString);
 
-// title = title.split(' ');
+
+
+// const changeCase = function changeCase(string) {
+//     let inverseString = '';
+//     for (const letter of string) {
+//         inverseString += letter === letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase();
+//     }
+//     return `Строка с противоположным регистром: ${inverseString}`;
+// }
+// console.log(changeCase('JavaScript'));
+// console.log(changeCase('OnluWin'));
+
+
+
+// let title = 'Top 10 benefits of React framework';
+
+// title = title.toLowerCase();
 // title = title.split(' ');
 // title = title.join('-');
 
 // console.log(title);
+
+
+
+// let title = 'Top 10 benefits of React framework';
+
+// title = title.toLowerCase();
+// title = title.split(' ');
+// title = title.join('-');
+
+// console.log(title);
+
+
+
+// const slugify = function slugyfy(string) {
+//     return string.toLowerCase().split(' ').join('-');
+
+// }
+// console.log(slugify('Top 10 benefits of React framework'));
 
 
 
@@ -646,7 +746,87 @@
 // for (let i = 0; i < employees.length; i += 1) {
 //     console.log(employees[i]);
 //     if (i === employees.indexOf(employees[i])) {
-//         filteredEmployees.push(employees[i])
+//         filteredEmployees = filteredEmployees.push(employees[i])
 //     }
 // }
 // console.log(filteredEmployees);
+
+
+
+// let filteredEmployees = ['Denis', 'Shaw', 'Watkins', 'Ray'];
+// const indexOfRemoveElement = filteredEmployees.indexOf("Shaw")
+
+// filteredEmployees.splice(indexOfRemoveElement, 1);
+// console.log(filteredEmployees);
+
+
+
+// let filteredEmployees = ['Denis', 'Shaw', 'Watkins', 'Ray'];
+// const indexOfRemoveElement = filteredEmployees.indexOf("Shaw")
+// const indexOfWatkins = filteredEmployees.indexOf('Watkins');
+
+// filteredEmployees.splice(indexOfRemoveElement, 1);
+// filteredEmployees.splice(indexOfWatkins - 1, 0, 'Thornton')
+// console.log(filteredEmployees);
+
+
+
+// const caltulateTotalPrice = function (items) {
+//     let total = 0;
+//     for (const item of items) {
+//         total += item;
+//     }
+//     console.log(`Array: [${items}]`);
+//     return `Total price: ${total}`;
+// }
+
+// console.log(caltulateTotalPrice([1, 2, 3]));
+// console.log(caltulateTotalPrice([1245, 252, 183]));
+
+
+
+// const calculateRatio = function (a) {
+//     let total = a * 37;
+//     let message = `${a} долларов = ${total} грн`
+
+//     return message;
+// }
+// console.log(calculateRatio(10));
+
+
+
+// const logItems = function logItems(items) {
+//     for (const item of items) {
+//         console.log(item);
+//     }
+// }
+// logItems(['клавиатура', 'часы', 'наушники']);
+// logItems([1, 2, 3]);
+// logItems(['4', '5', '6']);
+
+
+
+// const add = function add(...parametres) {
+//     let total = 0;
+//     for (const number of parametres) {
+//         total += number;
+//     }
+//     return `Total: ${total}`
+// }
+// console.log(add(5,7,2,8,246))
+
+
+
+// const filterNumbers = function (array, ...parametres) {
+//     const filteredArray = [];
+//     for (const number of array) {
+//         if (parametres.includes(number)) {
+//             filteredArray.push(number)
+//         }
+//     }
+//     return `Filtered array: ${filteredArray}`;
+// }
+// console.log(filterNumbers([2,5,82,1], 8, 2, 4, 1, 82));
+
+
+
