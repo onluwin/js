@@ -163,7 +163,7 @@
 // userName = prompt('Введите юзернейм.');
 
 // function newUser() {
-    
+
 //     userPassword = prompt("Введите пароль длиннее 8-х символов");
 //     if (userPassword.length < 8) {
 //         console.log("Короткий пароль");
@@ -174,7 +174,7 @@
 
 // function inputName() {
 //     let loginUserName = prompt('Ваш юзернейм(вход)');
- 
+
 //     if (userName !== loginUserName ) {
 //         console.log("Не верный логин");
 //         return inputName();
@@ -182,7 +182,7 @@
 // }
 // inputName();
 // function inputPassword() {
-    
+
 //     let loginUserPassword = prompt('Ваш пароль(вход)');
 //     if (userPassword !== loginUserPassword ) {
 //         console.log("Не верный пароль");
@@ -429,7 +429,7 @@
 //     if (i % 2 === 0) {
 //         console.log(`чётное: ${i}`);
 //         total += i;
-        
+
 //     }
 // }
 // console.log(`total: ${total}`);
@@ -827,6 +827,109 @@
 //     return `Filtered array: ${filteredArray}`;
 // }
 // console.log(filterNumbers([2,5,82,1], 8, 2, 4, 1, 82));
+
+
+
+// const calcBmi = function (weight = 0, height = 0) {
+//     weight = Number(weight);
+//     height = Number(height);
+//     let result = weight / (height * height);
+//     return `Ваш bmi: ${result.toFixed(1)}`;
+// }
+// console.log(calcBmi(43, 1.65));
+
+
+
+// const calcMinNumber = function (a, b) {
+//     if (typeof a !== 'number' || typeof b !== 'number') {
+//         return 'Один из параметров не число!';
+//     }
+//     let minNumber = 0;
+//     if (a < b) {
+//         return minNumber = a;
+//     }
+//     return minNumber = b;
+// }
+// console.log(calcMinNumber(11, 10));
+
+
+
+// const calcArea = function (dimensions) {
+//     const dimensionsArray = dimensions.split(' ')
+//     let message = 'Площадь прямоугольника равна: ';
+//     return message + Number(dimensionsArray[0]) * Number(dimensionsArray[1]);
+// }
+// console.log(calcArea('2 6'));
+
+
+
+// const calcAverageNumber = function (...parametres) {
+//     let total = 0;
+//     for (const parameter of parametres) {
+//         total += parameter / parametres.length;
+//     }
+//     return `Среднее число: ${total}`
+// }
+// console.log(calcAverageNumber(1,2,3,4));
+
+
+
+// const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'Ruby'];
+// let message = 'Уже включает в себя этот языкю.'
+
+// const addCourse = function (name) {
+//     if (courses.includes(name)) {
+//         return message;
+//     }
+//     courses.push(name)
+//     return courses;
+// }
+// console.log(addCourse('C++'));
+
+// const removeCourse = function (name) {
+//     if (courses.includes(name)) {
+//         courses.splice(name, 1)
+//         return courses;
+//     }
+//     return message = 'В списке такого языка нет';
+// }
+// console.log(removeCourse('HTML'));
+
+// const updateCourse = function (oldName, newName) {
+//     if (courses.includes(oldName)) {
+//         courses.splice(oldName, 1, newName)
+//         return courses
+//     }
+
+//     return message = 'В списке такого языка нет';
+// }
+// console.log(updateCourse('CSS', 'C#'));
+
+
+
+// function calculateTotal(number) {
+
+//     let total = 0;
+// for (let i = 0; i <= number; i += 1) {
+//     total += i;
+// }
+//     return total;
+// }
+// console.log(calculateTotal(3))
+
+
+
+// function filterArray(numbers, value) {
+
+//     const newArray = []
+//     for (let i = 0; i < numbers.length; i += 1) {
+//         if (numbers[i] > value) {
+//             newArray.push(numbers[i])
+//         }
+//     }
+
+//     return newArray;
+// }
 
 
 
