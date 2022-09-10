@@ -1,4 +1,9 @@
 
+
+////////////////////////////// MODULE 1 //////////////////////////////
+
+
+
 // console.log(Math.PI.toFixed(2))
 // console.log(Number(Math.PI.toFixed(2)))
 
@@ -449,6 +454,10 @@
 //     }
 // }
 // console.log(`total: ${total}`);
+
+
+
+////////////////////////////// MODULE 2 //////////////////////////////
 
 
 
@@ -933,3 +942,413 @@
 
 
 
+////////////////////////////// MODULE 3 //////////////////////////////
+
+
+
+// const salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 200
+// };
+// let total = 0;
+
+// for (const key in salaries) {
+//     total += salaries[key]
+// }
+// console.log(total);
+
+
+
+// const salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 200
+// };
+// let total = 0;
+// const salariesValues = Object.values(salaries);
+
+// for (const salary of salariesValues) {
+//     total += salary;
+// }
+
+// console.log(total);
+
+
+
+// const salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 200
+// };
+// const developersSalaries = Object.create(salaries)
+// const salariesValue = Object.values(salaries)
+// let total = 0;
+
+// developersSalaries.Artem = 200;
+// developersSalaries.Nikita = 500;
+
+// for (const salariesValue in developersSalaries) {
+//     if (developersSalaries.hasOwnProperty(salariesValue)) {
+//         total += developersSalaries[salariesValue];
+//     }
+// }
+// console.log(`Total: ${total}`);
+
+
+
+// const films = [
+//     {
+//         title: 'Duna',
+//         rating: 5
+//     },
+//     {
+//         title: 'Venom',
+//         rating: 7
+//     },
+//     {
+//         title: 'Luca',
+//         rating: 2
+//     }
+// ]
+// const titles = []
+// const getAllTitlesOfFilms = function (films) {
+
+//     for (const film of films) {
+//         titles.push(film.title)
+//     }
+//     return titles
+// }
+// console.log(getAllTitlesOfFilms(films));
+
+
+
+// const films = [
+//     {
+//         title: 'Duna',
+//         rating: 5
+//     },
+//     {
+//         title: 'Venom',
+//         rating: 7
+//     },
+//     {
+//         title: 'Luca',
+//         rating: 2
+//     }
+// ]
+// const findFilmByName = function (films, filmTitle) {
+//     for (const film in films) {
+//         if (films[film].title === filmTitle) {
+//             return films[film];
+//         }
+//     }
+// }
+// console.log(findFilmByName(films, 'Luca'));
+
+
+
+// const films = [
+//     {
+//         title: 'Duna',
+//         rating: 5
+//     },
+//     {
+//         title: 'Venom',
+//         rating: 7
+//     },
+//     {
+//         title: 'Luca',
+//         rating: 2
+//     }
+// ]
+
+// const findFilmByName = function (films, filmTitle) {
+
+//     for (const film in films) {
+//         if (films[film].title === filmTitle) {
+//             return films[film];
+//         }
+//     }
+// }
+// console.log(findFilmByName(films, 'Venom'));
+
+
+
+// const films = [
+//     {
+//         title: 'Duna',
+//         rating: 5,
+//         adult: false
+//     },
+//     {
+//         title: 'Venom',
+//         rating: 7,
+//         adult: true
+//     },
+//     {
+//         title: 'Luca',
+//         rating: 2,
+//         adult: false
+//     }
+// ]
+
+// const getAdultsFilms = function (films) {
+//     const adultFilms = []
+//     for (const film of films) {
+//         if (film.adult) {
+//             adultFilms.push(film)
+//         }
+//     }
+//     return adultFilms;
+// }
+// console.log(getAdultsFilms(films));
+
+
+
+// const films = [
+//     {
+//         title: 'Duna',
+//         rating: 5,
+//         adult: false
+//     },
+//     {
+//         title: 'Venom',
+//         rating: 7,
+//         adult: true
+//     },
+//     {
+//         title: 'Luca',
+//         rating: 2,
+//         adult: false
+//     }
+// ]
+
+// const getNotAdultsFilms = function (films) {
+//     const allFilms = []
+//     for (const film of films) {
+//         if (film) {
+//             allFilms.push(film)
+//         }
+//     }
+//     return allFilms;
+// }
+// console.log(getNotAdultsFilms(films));
+
+
+
+// const feedBack = {
+//     good: 5,
+//     neutral: 10,
+//     bad: 3,
+// }
+// let totalFeedBack = 0;
+// const feedBackValues = Object.values(feedBack);
+
+// for (const feedBackValue of feedBackValues) {
+//     totalFeedBack += feedBackValue;
+// }
+
+// console.log(`Total feedback: ${totalFeedBack}`);
+
+
+
+// const friends = [
+//     { name: 'Poly', isOnline: false, },
+//     { name: 'Mango', isOnline: true, },
+//     { name: 'Ajax', isOnline: false, },
+//     { name: 'Kiwi', isOnline: true, },
+// ]
+// const findFriendByName = function (allFriends, friendNameToFind) {
+//     for (const friend of allFriends) {
+//         if (friend.name === friendNameToFind) {
+//             return friend
+//         }
+//     }
+// }
+// console.log(findFriendByName(friends, 'Mango'));
+
+
+
+// const friends = [
+//     { name: 'Poly', isOnline: false, },
+//     { name: 'Mango', isOnline: true, },
+//     { name: 'Ajax', isOnline: false, },
+//     { name: 'Kiwi', isOnline: true, },
+// ]
+// const getAllNames = function (allFriends) {
+//     const allFriendsNames = [];
+//     for (const friend of allFriends) {
+//         allFriendsNames.push(friend.name);
+//     }
+//     return allFriendsNames;
+// }
+// console.log(getAllNames(friends));
+
+
+
+// const friends = [
+//     { name: 'Poly', isOnline: false, },
+//     { name: 'Mango', isOnline: true, },
+//     { name: 'Ajax', isOnline: false, },
+//     { name: 'Kiwi', isOnline: true, },
+// ]
+// const friendsByOnlineStatus = { onlineFriends: [], offlineFriends: [] }
+// const getFriendsByOnlineStatus = function (allFriends) {
+
+//     for (const friend of allFriends) {
+//         if (friend.isOnline) {
+//             friendsByOnlineStatus.onlineFriends.push(friend)
+//         } else {
+//             friendsByOnlineStatus.offlineFriends.push(friend)
+//         }
+//     }
+
+//     return friendsByOnlineStatus;
+// }
+// console.log(getFriendsByOnlineStatus(friends));
+
+
+
+// const x = {
+//     a: 5,
+//     b: 2,
+//     c: 8,
+//     d:1,
+// }
+// console.log(Object.keys(x).length);
+
+
+
+// const cart = {
+//     items: [],
+//     getItems() {},
+//     add(product) {
+//         this.items.push(product)
+//     },
+//     remove(productName) {
+//         this.items.pop(productName)
+//     },
+//     clear() {
+//         this.items.length = 0
+//     },
+//     countTotalPrice() {
+//         let totalPrice = 0;
+//         for (const item of this.items) {
+//             totalPrice += item.price;
+//         }
+//     },
+//     increaseQuantity(productName) {},
+//     decreaseQuantity(productName) {},
+// }
+
+// cart.add({productName:'микроволновка', price: 200});
+// cart.add({productName: 'чайник', price: 100});
+// // cart.add('чайник')
+// // cart.clear()
+// // cart.remove('микроволновка');
+
+// console.log(cart.countTotalPrice());
+// console.log(cart.items);
+
+
+
+// function countProps(object) {
+//     let propCount = 0;
+
+//     for (const key in object) {
+
+//         if (object.hasOwnProperty(key)) {
+//         propCount = Object.keys(object).length
+//     }
+// }
+
+//     return propCount;
+// }
+// console.log(countProps({name: 'Mango', age: 50, location: {country: 'Ukraine',}}));
+
+
+
+// function countTotalSalary(salaries) {
+//     let totalSalary = 0;
+//     const allSalary = Object.values(salaries)
+
+//     for (const salary of allSalary) {
+//         totalSalary += salary
+//     }
+
+//     return totalSalary;
+// }
+// console.log(countTotalSalary({Nikita: 500, Dima: 200, Maks: 1000,}));
+
+
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+
+//     for (const product of products) {
+
+//         if (productName === product.name) {
+//         return product.price
+//         }
+
+//     }
+//     return null
+// }
+// console.log(getProductPrice("Scanner"));
+
+
+
+///////////////////////////////////////////////////////  19 //////////////////////////////////////////////////////
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+// const productsNames = []
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+
+//     for (const product of products) {
+//         console.log(product);
+//         if (product.name === propName) {
+//             productsNames.push(product.name)
+//         }
+//     }
+
+// return productsNames
+//   // Change code above this line
+// }
+// console.log(getAllPropValues('Droid'));
+
+
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//     let totalPrice = 0;
+
+//     for (const product of products) {
+//         // console.log(product);
+//         if (product.name === productName) {
+//             totalPrice = product.price * product.quantity;
+//         }
+//     }
+
+//     return totalPrice;
+// }
+// console.log(calculateTotalPrice("Droid"));
