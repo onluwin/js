@@ -1222,34 +1222,43 @@
 
 // const cart = {
 //     items: [],
-//     getItems() {},
+//     getItems() {
+//         return this.items;
+//     },
 //     add(product) {
 //         this.items.push(product)
 //     },
 //     remove(productName) {
-//         this.items.pop(productName)
+        
+//         for (let i = 0; i < this.items.length; i += 1) {
+
+//             const item = this.items[i]
+
+//             if (productName === item.name) {
+//                 return this.items.splice(i ,1)
+//             }
+//         }
 //     },
 //     clear() {
 //         this.items.length = 0
 //     },
 //     countTotalPrice() {
 //         let totalPrice = 0;
-//         for (const item of this.items) {
-//             totalPrice += item.price;
-//         }
 //     },
 //     increaseQuantity(productName) {},
 //     decreaseQuantity(productName) {},
 // }
 
-// cart.add({productName:'микроволновка', price: 200});
+// cart.add({productName:'микроволновка'});
 // cart.add({productName: 'чайник', price: 100});
-// // cart.add('чайник')
 // // cart.clear()
-// // cart.remove('микроволновка');
+// cart.remove('микроволновка');
+// // console.log(cart.remove('микроволновка'));
+// // console.log(cart.items);
+// // console.log(cart.getItems());
+// // cart.clear()
+// // console.log(cart.getItems());
 
-// console.log(cart.countTotalPrice());
-// console.log(cart.items);
 
 
 
@@ -1313,22 +1322,25 @@
 //   { name: "Droid", price: 400, quantity: 7 },
 //   { name: "Grip", price: 1200, quantity: 9 },
 // ];
-// const productsNames = []
 
 // function getAllPropValues(propName) {
-//   // Change code below this line
-
+//     const array = []
 //     for (const product of products) {
-//         console.log(product);
-//         if (product.name === propName) {
-//             productsNames.push(product.name)
+//         const keys = Object.keys(product)
+//         // console.log(Object.keys(product));
+//         // console.log(product);
+//         for (const key of keys) {
+//             if (propName === key) {
+//             array.push(Object.values(keys))
+//             return array
 //         }
+//         }
+//         // console.log(keys);
+//         console.log(Object.values(keys));
+        
 //     }
-
-// return productsNames
-//   // Change code above this line
 // }
-// console.log(getAllPropValues('Droid'));
+// console.log(getAllPropValues('name'));
 
 
 
@@ -1352,3 +1364,105 @@
 //     return totalPrice;
 // }
 // console.log(calculateTotalPrice("Droid"));
+
+
+
+// const bookShelf = {
+//     books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//     updateBook(oldName, newName) {
+
+//         const bookIndex = this.books.indexOf(oldName);
+//         this.books.splice(bookIndex, 1)
+//         this.books.splice(bookIndex, 0, newName)
+//         return this.books
+
+//     },
+// };
+// console.log(bookShelf.updateBook("Haze", 'S-MAN'));
+
+
+
+// const atTheOldToad = {
+//     potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//     ],
+//   // Change code below this line
+//     getPotions() {
+//     return this.potions;
+//     },
+//     addPotion(newPotion) {
+//         for (const potion of this.potions) {
+//             if (potion.name === newPotion.name) {
+//                 return `Error! Potion ${newPotion.name} is already in your inventory!`;
+
+//             }
+
+//         }
+//     this.potions.push(newPotion);
+//         return this.potions
+
+
+//     },
+//     removePotion(potionName) {
+//         const potionIndex = this.potions.indexOf(potionName);
+//         for (let i = 0; i < this.potions.length; i += 1) {
+//             if (this.potions[i].name === potionName) {
+//                 this.potions.splice(i, 1);
+//                 return this.potions
+//             }
+//         }
+
+//       return `Potion ${potionName} is not in inventory!`;
+
+
+//   },
+//   updatePotionName(oldName, newName) {
+//       const potionIndex = this.potions.indexOf(oldName);
+
+//       for (let i = 0; i < this.potions.length; i += 1) {
+//         if (this.potions[i].name === oldName) {
+//             this.potions[i].name = newName;
+//           return this.potions
+//    }
+//       }
+
+
+//       return `Potion ${oldName} is not in inventory!`;
+//   },
+// };
+// // console.log(atTheOldToad.getPotions());
+// // console.log(atTheOldToad.addPotion({ name: "Stone skin", price: 520 },));
+// console.log(atTheOldToad.getPotions());
+// console.log(atTheOldToad.addPotion({ name: "Stone skin", price: 520 },));
+// // console.log(atTheOldToad.removePotion("Dragon breath"));
+// // console.log(atTheOldToad.updatePotionName("Stone skin", 'SP-MAN'));
+// // console.log(atTheOldToad.getPotions());
+
+
+
+// const forecast = {
+//     today: {
+//     low: 28,
+//     high: 32,
+//     },
+//     tomorrow: {
+//     low: 27,
+//     high: 31,
+//     },
+// };
+// // Change code below this line
+
+// const { today: { low: todayLow, high: todayHigh, icon: todayIcon1 = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" },
+//         tomorrow: { low: tomorrowLow, high: tomorrowHigh, icon: tomorrowIcon1 = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" }, } = forecast;
+
+// const highToday = todayHigh;
+// const lowToday = todayLow;
+// const todayIcon = todayIcon1;
+
+// const highTomorrow = tomorrowHigh;
+// const lowTomorrow = tomorrowLow;
+// const tomorrowIcon = tomorrowIcon1;
+
+// console.log(highToday, tomorrowHigh, todayIcon1); НЕ ДОПИСАНО (3 mod, задача 26 вроде)
