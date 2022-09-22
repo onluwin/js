@@ -1229,7 +1229,7 @@
 //         this.items.push(product)
 //     },
 //     remove(productName) {
-        
+
 //         for (let i = 0; i < this.items.length; i += 1) {
 
 //             const item = this.items[i]
@@ -1337,7 +1337,7 @@
 //         }
 //         // console.log(keys);
 //         console.log(Object.values(keys));
-        
+
 //     }
 // }
 // console.log(getAllPropValues('name'));
@@ -1488,6 +1488,61 @@
 
 // }
 // console.log(calculateTotalPrice('Radar'));
+
+
+
+////////////////////////////// MODULE 4 //////////////////////////////
+
+
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// numbers.forEach((number, index) => {
+//     console.log(`Индекс ${index}, значение ${number}`);
+// }); ///////////////////////// BETTER /////////////////////////
+
+// numbers.forEach((number, index) => console.log(`Индекс ${index}, значение ${number}`));
+
+
+
+// const numbers = [1, 6, 4, 7, 2]
+// const logMessage = (number, index) => {
+//     console.log(`Индекс ${index}, значение ${number}`)
+// }
+
+// numbers.forEach(logMessage);
+
+
+
+// const numbers = [1, 6, 4, 7, 2]
+
+// const duoubledNumbers = numbers.map((number) => number * 2)
+// console.log(duoubledNumbers);
+
+
+
+// const students = [
+//     { name: "Манго", score: 83 },
+//     { name: "Поли", score: 59 },
+//     { name: "Аякс", score: 37 },
+//     { name: "Киви", score: 94 },
+//     { name: "Хьюстон", score: 64 },
+// ];
+// const studentsNames = students.map(student => student.name);
+// console.log(studentsNames);
+
+
+
+// const students = [
+//     { name: "Манго", courses: ["математика", "физика"] },
+//     { name: "Поли", courses: ["информатика", "математика"] },
+//     { name: "Киви", courses: ["физика", "биология"] },
+// ];
+
+// const allCourses = students.flatMap(student => student.courses);
+// // console.log(allCourses);
+// const filteredCourses = allCourses.filter((course, index, array) => array.indexOf(course) === index)
+// console.log(filteredCourses);
 
 
 
