@@ -1399,7 +1399,7 @@
 //     this.potions.push(newPotion);
 //     },
 //     removePotion(potionName) {
-        
+
 //         // console.log(potionIndex);
 //         // console.log(this.potions.indexOf(potionName));
 //         for (let i = 0; i < this.potions.length; i += 1) {
@@ -1408,13 +1408,13 @@
 //                 this.potions.splice(potionIndex, 1);
 //                 return
 //             }
-            
-                
+
+
 //         return `Potion ${potionName.name} is not in inventory!`;
 //         }
-        
+
 //     } ,
-    
+
 //     updatePotionName(oldName, newName) {
 //         const updatePotionIndex = this.potions.indexOf(oldName);
 //         const newObject = { }
@@ -1554,3 +1554,9 @@
 //     return newNumbers
 // }
 // console.log(clearMultiply(numbers, 5));
+
+
+
+// const numbers = [1, 2, 3, 4, 5, 2, 5]
+// const uniqueNumbers = numbers.filter((number, index, array) => array.indexOf(number) === index)
+// console.log(uniqueNumbers); 
