@@ -1559,4 +1559,409 @@
 
 // const numbers = [1, 2, 3, 4, 5, 2, 5]
 // const uniqueNumbers = numbers.filter((number, index, array) => array.indexOf(number) === index)
-// console.log(uniqueNumbers); 
+// console.log(uniqueNumbers);
+
+
+
+// const pizzaPalace = {
+//     pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
+//     order(pizzaName, makePizza, onOrderError) {
+//         for (let pizza of pizzaPalace.pizzas) {
+//             // console.log(pizza);
+//             // console.log(pizzaName);
+//             if (pizza === pizzaName) {
+//                 // console.log('есть');
+//                 return makePizza(pizzaName)
+//             }
+
+//         }
+//         return onOrderError(`There is no pizza with a name ${pizzaName} in the assortment.`)
+//     },
+// };
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//     return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//     return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// console.log(pizzaPalace.order('Smoked', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Vienna', makePizza, onOrderError));
+
+
+
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   const newArray = []
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//         newArray.push(numbers[i] + value)
+//       // numbers[i] = numbers[i] + value;
+//     } else {
+//         newArray.push(numbers[i])
+//     }
+
+//     }
+//   // Change code above this line
+//     return newArray
+// }
+// console.log(changeEven([1,2,3,4,5], 2));
+
+
+
+// const books = [
+//     {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//     },
+//     {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//     },
+//     {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//     },
+//     { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//     { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+
+// const titles = books.map((book) => {
+//     return book.title
+// });
+// console.log(titles);
+
+
+
+// const getFriends = (users) => {
+//     const allFriends = users.flatMap(user => user.friends)
+//     const filteredFriends = allFriends.filter((user, index, array) => array.indexOf(user) === index)
+//     return filteredFriends
+// };
+// console.log(getFriends([
+//     {
+//     friends: ["Sharron Pace"],
+//     },
+//     {
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     },
+//     {
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     },
+//     {
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     },
+//     {
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     },
+//     {
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     },
+//     {
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     }
+// ]));
+
+
+
+// const players = [
+//     { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//     { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//     { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//     { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+
+
+// const totalAveragePlaytimePerGame = players.reduce((prevValue, player) => {
+//     const a = player.playtime / player.gamesPlayed
+//     return prevValue + a
+// }, 0);
+// console.log(totalAveragePlaytimePerGame);
+
+
+
+// const users = [
+//     {
+//     balance: 2811,
+//     },
+//     {
+//     balance: 3821,
+//     },
+//     {
+//     balance: 3793,
+//     },
+//     {
+//     balance: 2278,
+//     },
+//     {
+//     balance: 3951,
+//     },
+//     {
+//     balance: 1498,
+//     },
+//     {
+//     balance: 2764,
+//     }
+// ]
+
+// const calculateTotalBalance = users => {
+//     const totalBalance = users.reduce((prevBalance, user) => {
+//         return prevBalance + user.balance
+//     }, 0)
+//     return totalBalance
+// };
+// console.log(calculateTotalBalance(users));
+
+
+// const users = [
+//     {
+//     friends: ["Sharron Pace"],
+//     },
+//     {
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     },
+//     {
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     },
+//     {
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     },
+//     {
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     },
+//     {
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     },
+//     {
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     }
+// ]
+
+// const getTotalFriendCount = users => {
+//     return users.reduce((prevValue, user) => prevValue + user.friends.length, 0)
+// };
+// console.log(getTotalFriendCount(users));
+
+
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
+
+// const names = [...books].sort((a,b) => {
+//     if(a.author > b.author) {
+//       return 1
+//     }
+//     if(a.author < b.author) {
+//       return -1
+//     }
+//   })
+//   .filter(book => book.rating > MIN_BOOK_RATING)
+//   .map(book => book.author)
+//   .sort((a,b) => {
+//     if(a.author > b.author) {
+//       return 1
+//     }
+//     if(a.author < b.author) {
+//       return -1
+//     }
+//   })
+
+
+
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]
+
+// const getSortedFriends = users => {
+//     const uniqueFriends = [...users].filter((user,index,array) => {
+//         return array.indexOf(user.friends === index)
+//     })
+//     console.table(uniqueFriends);
+//     console.log(uniqueFriends);
+// };
+
+// const getSortedFriends = users => {
+//     return [...users]
+//         .flatMap(user => user.friends)
+//         .filter((user, index, array) => array.indexOf(user) === index)
+//         .sort((a, b) => {
+//             if (a > b) {
+//                 return 1
+//             }
+//             if (a < b)
+//                 return -1
+//         })
+// };
+// console.log(getSortedFriends(users));
+
+
+
+// const getTotalBalanceByGender = (users, gender) => {
+//     return [...users]
+//     .reduce((prevValue, user, balance) => {
+//     if(user.gender === gender) {
+//         return prevValue + user.balance
+//     }
+//     }, 0)
+// };
+
+// const getTotalBalanceByGender = (users, gender) => {
+//     let newArray = []
+//     for (const user of users) {
+//         if (user.gender === gender) {
+//             newArray.push(user)
+//         }
+//     }
+//     newArray = newArray.map(user => user.balance)
+//     let total = 0
+//     for (let i = 0; i < newArray.length; i += 1) {
+//         total += newArray[i]
+//     }
+//     return total
+// };
+// console.log(getTotalBalanceByGender(users, 'female'));
+
+
+
+// const getTotalBalanceByGender = (users, gender) => {
+//     return [...users]
+//     .filter((user) => user.gender === gender)
+//     .map(user => user.balance)
+//     .reduce((prevBalance, balance) => prevBalance + balance)
+// };
+// console.log(getTotalBalanceByGender(users,'male'));
+
+
+// const numbers = [1, 2, 3, 4, 5]
+// const newArray = []
+// for (const number of numbers) {
+//     if (number > 2) {
+//         newArray.push(number)
+//     }
+// }
+// console.log(newArray);
+
+
+
+////////////////////////////// MODULE 5 //////////////////////////////
+
+
+
+// const showName = function()  {
+//     console.log('name -> ' + this.userName);
+// }
+// const objA = {
+//     userName: 'Mango'
+// }
+// showName.call(objA) // Mango
+
+
+
+// const objA = {
+//     x: 5
+// }
+// const objB = {
+//     y:10
+// }
+// const objC = {
+//     z:15
+// }
+// objA.Object.create(objB)
+// console.log(objA.y);
+
+
+
