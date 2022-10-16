@@ -5,3 +5,24 @@
 .invalid {
   border-color: red;
 }
+/* .is-hidden {
+  display: none;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  opacity: 0;
+} */
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.hide {
+  display: none;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  opacity: 0;
+}

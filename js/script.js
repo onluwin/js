@@ -2072,3 +2072,61 @@
 
 
 
+// const refs = {
+//     btn: document.querySelector('#hide'),
+//     text: document.querySelector('#text'),
+// }
+// refs.btn.addEventListener('click', () => {
+//     // refs.text.innerHTML = ''
+//     // refs.text.remove()
+//     // refs.text.style.display = 'none'
+//     // refs.text.classList.add('hide')
+//     // refs.text.textContent = ''
+
+// })
+
+
+
+// const refs = {
+//     input: document.querySelector('#inputText'),
+//     btn: document.querySelector('#inputBtn'),
+// }
+// const callback = () => {
+//     if (refs.input.value === '') {
+//     refs.input.value = 'test@gmail.com'
+// }
+// }
+// refs.btn.addEventListener('click', callback)
+
+
+
+// const refs = {
+//     input: document.querySelector('#text1'),
+//     btn: document.querySelector('#btn1'),
+// }
+
+// const callback = () => {
+//     const inputValue = refs.input.value.trim()
+//     if (inputValue === '') {
+//     alert('Вы ничего не ввели')
+// } else {
+//     alert(`Вы ввели: ${inputValue}`)
+// }
+// }
+// refs.btn.addEventListener('click', callback)
+
+
+
+// const squareRef = document.querySelector('.square');
+// const btnRef = document.querySelector('#hideBtn');
+// const btnTextShow = 'вернуть квадрат';
+// const btnTextHide = 'спрятать квадрат';
+// const callback = () => {
+//     squareRef.classList.toggle('hide');
+//     const text = btnRef.textContent === btnTextShow ? btnTextHide : btnTextShow;
+//     btnRef.textContent = text;
+// }
+// btnRef.addEventListener('click', callback);
+
+
+
