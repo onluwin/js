@@ -17,9 +17,10 @@
 
 
 
-// const max = 100;
+// const max = 3;
 // const min = 1;
-// console.log(Math.random() * (max - min) + min)
+// const result  = Number(Math.random() * (max - min) + min)
+// console.log(result.toFixed(0))
 
 
 
@@ -2130,3 +2131,31 @@
 
 
 
+////////////////////////////// MODULE 8 //////////////////////////////
+
+
+
+
+// рандомайзер не доделан!
+
+// const minNumber = document.querySelector('.min');
+// const maxNumber = document.querySelector('.max');
+// const resultBtn = document.querySelector('.result-btn');
+// const resultAPI = document.querySelector('.result-js');
+// let minValue = 0;
+// let maxValue = 0;
+// const onMinNumberInput = function (e) {
+//     minValue = e.currentTarget.value;
+// }
+// const onMaxNumberInput = function (e) {
+//     maxValue = e.currentTarget.value;
+//     // console.log(e.currentTarget.value);
+// }
+// console.log(maxValue);
+// minNumber.addEventListener('input', onMinNumberInput)
+// maxNumber.addEventListener('input', onMaxNumberInput)
+// const result = Number(Math.random() * (maxValue - minValue) + minValue).toFixed(0)
+// // console.log(result);
+// resultBtn.addEventListener('click', () => {
+//     resultAPI.textContent = result
+// })
