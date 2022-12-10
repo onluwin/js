@@ -2177,14 +2177,14 @@
 
 
 
-const fetchUserById = (username, id) => {
-    const condition = Math.random() > 0.5
-    return new Promise((resolve, reject) => {
-        if (condition) {
-            resolve(`нашел пользователя ${username} по айди ${id}`)
-        }
-        reject(`пользователя с ником ${username} и айди ${id} не найдено`)
-    })
+// const fetchUserById = (username, id) => {
+//     const condition = Math.random() > 0.5
+//     return new Promise((resolve, reject) => {
+//         if (condition) {
+//             resolve(`нашел пользователя ${username} по айди ${id}`)
+//         }
+//         reject(`пользователя с ником ${username} и айди ${id} не найдено`)
+//     })
 
-}
-fetchUserById('mango', 10).then(v=> console.log(v)).catch(error=>console.log(error))
+// }
+// fetchUserById('mango', 10).then(v=> console.log(v)).catch(error=>console.log(error))
