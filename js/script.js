@@ -2159,3 +2159,32 @@
 // resultBtn.addEventListener('click', () => {
 //     resultAPI.textContent = result
 // })
+
+
+
+////////////////////////////// MODULE 9 //////////////////////////////
+
+
+
+// const condition = Math.random() > 0.3
+// const promise = new Promise((resolve, reject) => {
+//     if (condition) {
+//         resolve('все гуд')
+//     }
+//     reject('reject')
+// })
+// promise.then(v => console.log(v)).catch(e=>console.log(e))
+
+
+
+const fetchUserById = (username, id) => {
+    const condition = Math.random() > 0.5
+    return new Promise((resolve, reject) => {
+        if (condition) {
+            resolve(`нашел пользователя ${username} по айди ${id}`)
+        }
+        reject(`пользователя с ником ${username} и айди ${id} не найдено`)
+    })
+
+}
+fetchUserById('mango', 10).then(v=> console.log(v)).catch(error=>console.log(error))
