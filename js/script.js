@@ -2188,3 +2188,12 @@
 
 // }
 // fetchUserById('mango', 10).then(v=> console.log(v)).catch(error=>console.log(error))
+
+
+
+// const targetDate = new Date(2021, 1, 21, 3, 12)
+// function getWeekDay (date) {
+//     const days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пятница', 'сб'];
+//     return days[targetData.getDay(date)]
+// }
+// console.log(getWeekDay(targetDate));
