@@ -2135,30 +2135,30 @@
 
 
 
+// RANDOMIZER
 
-// рандомайзер не доделан!
-
-// const minNumber = document.querySelector('.min');
-// const maxNumber = document.querySelector('.max');
+// const minNumberInput = document.querySelector('.min');
+// const maxNumberInput = document.querySelector('.max');
 // const resultBtn = document.querySelector('.result-btn');
 // const resultAPI = document.querySelector('.result-js');
-// let minValue = 0;
-// let maxValue = 0;
-// const onMinNumberInput = function (e) {
-//     minValue = e.currentTarget.value;
+
+// let minValue = null;
+// let maxValue = null;
+
+// let result = 0
+
+// const onNumberInput = function (e) {
+//     minValue = Number(minNumberInput.value);
+//     maxValue = Number(maxNumberInput.value);
+//     result = Math.floor(Math.random() * maxValue) + minValue;
 // }
-// const onMaxNumberInput = function (e) {
-//     maxValue = e.currentTarget.value;
-//     // console.log(e.currentTarget.value);
+// const onResultBtnClick = () => {
+//     resultAPI.textContent = result;
 // }
-// console.log(maxValue);
-// minNumber.addEventListener('input', onMinNumberInput)
-// maxNumber.addEventListener('input', onMaxNumberInput)
-// const result = Number(Math.random() * (maxValue - minValue) + minValue).toFixed(0)
-// // console.log(result);
-// resultBtn.addEventListener('click', () => {
-//     resultAPI.textContent = result
-// })
+
+// minNumberInput.addEventListener('input', onNumberInput)
+// maxNumberInput.addEventListener('input', onNumberInput)
+// resultBtn.addEventListener('click', onResultBtnClick)
 
 
 
@@ -2197,3 +2197,71 @@
 //     return days[targetData.getDay(date)]
 // }
 // console.log(getWeekDay(targetDate));
+
+
+
+// const tagPRef = document.querySelector('.promise-result');
+// const promiseBtn = document.querySelector('.promise-btn');
+
+// const getRandomNumber = () => Math.floor(Math.random() * 4) + 1;
+
+// let delay = 0;
+
+// const createPromise = (number, delay) => {
+//     delay = number * 1000
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if (number < 3) {
+//                 resolve(delay);
+//             }
+//             reject(delay);
+//         }, delay);
+
+//     })
+// }
+
+// const onCreatePromiseBtnClick = () => {
+//     tagPRef.textContent = 'Promise pending . . .'
+//     createPromise(getRandomNumber(), delay).then(delay => { tagPRef.textContent = `✅Resolved after ${delay} ms` }).catch(delay => { tagPRef.textContent = `❌Rejected after ${delay} ms` })
+// }
+
+// promiseBtn.addEventListener('click', onCreatePromiseBtnClick)
+
+
+// const frameworks = ['React', 'Vue', 'Angular'];
+// const getRandomDelay = () => Math.floor(Math.random() * 3); тогда delay = getRandomDelay() * 1000;
+// const getRandomDelay = () => Math.floor(Math.random() * 2000);
+// const isSucces = () => Math.floor(Math.random() * 2) + 1;
+
+// const makePromise = (framework) => {
+//     return new Promise((resolve, reject) => {
+//         const delay = getRandomDelay();
+//         setTimeout(() => {
+//             if (isSucces() < 2) {
+//                 resolve({ message: 'Promise resolve✅', framework, delay })
+//             }
+            
+//             reject({ message: 'Promise error❌', framework, delay })
+//         }, delay);
+//     })
+// }
+
+// если без Promise.race()
+
+// frameworks.map(item => {
+//     makePromise(item).then(v => {
+//         console.log(v.message,v.framework, v.delay);
+//     }).catch(e => {
+//         console.log(e.message, e.framework, e.delay);
+//     })
+// })
+
+
+// это гуд 🔽
+
+// const promises = frameworks.map(makePromise);
+// Promise.race(promises).then(v => { console.log(v.message, v.framework, v.delay) }).catch(e => { console.log(e.message, e.framework, e.delay) })
+
+// Promise.all(promises).then(data => {
+//     data.map(v => { console.log(v.message, v.framework, v.delay) })
+// }).catch(e => { console.log(e.message, e.framework, e.delay) })
