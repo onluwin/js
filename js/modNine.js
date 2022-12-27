@@ -97,3 +97,30 @@
 // Promise.all(promises).then(data => {
 //     data.map(v => { console.log(v.message, v.framework, v.delay) })
 // }).catch(e => { console.log(e.message, e.framework, e.delay) })
+
+
+
+// посчитать кол-во completed: true и false
+
+// const tasks = [
+//     { id: 0, text: "task 1", completed: true },
+//     { id: 1, text: "task 2", completed: true },
+//     { id: 2, text: " task 3", completed: false },
+//     { id: 3, text: " task 4", completed: false },
+//     { id: 4, text: " task 5", completed: false },
+// ];
+
+// const count = tasks.reduce((prevValue, task) => {
+//     if (task.completed) {
+//         prevValue.completed += 1
+//     } else {
+//         prevValue.active += 1
+//     }
+//     return prevValue;
+// }, { active: 0, completed: 0 });
+
+// console.log(count.active);
+// console.log(count.completed);
+
+
+
