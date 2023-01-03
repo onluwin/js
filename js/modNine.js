@@ -124,3 +124,32 @@
 
 
 
+// function openCase() {
+//   const items = [
+//     {
+//       name: 'Dragon lore',
+//       chance: 0.04
+//     },
+//     {
+//       name: 'синяя пушка',
+//       chance: 0.86
+//     },
+//     {
+//       name: 'красная пушка',
+//       chance: 0.1
+//     }
+//   ];
+
+//     let randomNumber = Math.random();
+//     console.log(randomNumber);
+//     let currentChance = 0;
+
+//   for (let i = 0; i < items.length; i += 1) {
+//     currentChance += items[i].chance;
+
+//     if (randomNumber <= currentChance) {
+//       return items[i].name;
+//     }
+//   }
+// }
+// console.log(openCase());
