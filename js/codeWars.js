@@ -21,27 +21,33 @@
 
 
 
-function persistence(num) {
-    const stringNum = String(num);
-    let arrOfNum = stringNum.split('');
-    if (stringNum.length === 1) {
-        return 0;
-    }
-    let calculation = 10;
-    
-    // console.log(arrOfNum);
-    let answer = 0
+// function persistence(num) {
+//     if (String(num).length === 1 || !num) {
+//         return 0
+//     }
+//     let answer = 0;
+//     let arrOfNum = String(num).split('')
+//     while (arrOfNum.length > 1) {
+//         arrOfNum = String(arrOfNum.reduce((prevValue, currentValue) => prevValue * currentValue)).split('')
+//         console.log(arrOfNum);
+//         answer += 1;
+//     }
+//     return answer // 4
+// }
+// console.log(persistence(999));
 
-    arrOfNum.reduce((previousValue, element, index, array) => {
-        
-        previousValue = array[index] * array[index + 1]
-        console.log(previousValue);
-        return previousValue
-    }, 0);
 
-    return answer
-}
-console.log(persistence(999));
+
+// function makeNegative(num) {
+//     if (!num) return;
+//     let result;
+//     const strNum = String(num)
+//     if (num > 0) {
+//         result = strNum.padStart(strNum.length + 1, '-')
+//     }
+//     return Number(result);
+// }
+// console.log(makeNegative(3));
 
 
 
