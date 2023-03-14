@@ -90,3 +90,63 @@
 // console.log(isPalindrome('шалаш')); // TRUE
 
 // ANOTHER
+function sumTwoSmallestNumbers(numbers) {
+  if (numbers.length < 4) {
+    return console.log('array.length < 4');
+  }
+  return numbers.filter((item, array) => {
+    let counter = 1;
+    let result = [];
+    let shouldFindFirstNum = true;
+    let smallestNum;
+
+    while (shouldFindFirstNum) {
+      if (item > 0) {
+        smallestNum = numbers[array.indexOf(item)];
+        shouldFindFirstNum = false;
+      }
+    }
+    console.log(smallestNum);
+  });
+
+  //   if (numbers.length < 4) {
+  //     return console.log('array.length < 4');
+  //   }
+  //   let result = [];
+  //   let smallestNum = numbers[0];
+
+  //   numbers.forEach(item => {
+  //     if (item < 0) {
+  //       return;
+  //     }
+  //     if (item < smallestNum) {
+  //       smallestNum = item;
+  //     }
+  //   });
+  //   const smallestNumIdx = numbers.indexOf(smallestNum);
+  //   numbers.splice(smallestNumIdx, 1);
+  //   result.push(smallestNum);
+  //   smallestNum = numbers[0];
+
+  //   numbers.forEach(item => {
+  //     if (item < 0) {
+  //       return;
+  //     }
+
+  //     if (item < smallestNum) {
+  //       smallestNum = item;
+  //     }
+  //   });
+  //   result.push(smallestNum);
+
+  //   return result[0] + result[1];
+}
+console.log(sumTwoSmallestNumbers([-2, 15, 28, 4, 2, 43])); // 6
+
+// for (let i = 0; i < 2; i++) {
+//   if (i === 1) {
+//     console.log('последний этап фора');
+//   } else {
+//     console.log('обычный этап фора');
+//   }
+// }
