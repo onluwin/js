@@ -164,3 +164,15 @@
 // console.log(isIsogram('abc', 'правильный ответ = true'));
 
 // ANOTHER
+// function replaceWords(string) {
+//   const result = [];
+//   const arr = string.split(' ');
+//   for (const element of arr) {
+//     const slisedElement = element.slice(0, 0).replaceAll('', 'qwe');
+//     result.push(slisedElement);
+//   }
+//   return result.join(' ');
+// }
+// console.log(replaceWords('hi my name is Nikita')); // 5
+
+// ANOTHER
