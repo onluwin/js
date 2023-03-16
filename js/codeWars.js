@@ -176,3 +176,91 @@
 // console.log(replaceWords('hi my name is Nikita')); // 5
 
 // ANOTHER
+// function solution(string) {
+//   const arrOfStr = string.split('');
+//   const result = [];
+//   arrOfStr.forEach(letter => {
+//     letter === letter.toUpperCase()
+//       ? result.push(' ' + letter)
+//       : result.push(letter);
+//   });
+//   return result.join('');
+// }
+// console.log(solution('camelCasing'));
+// console.log('правильное решение = camel Casing');
+
+// ANOTHER
+
+// НЕ РЕШЕНА
+
+// const readableTimetable = workdays => {
+//   const values = [];
+//   const result = [];
+//   const stack = [];
+
+//   workdays.forEach(element => {
+//     values.push(Object.values(element));
+//   });
+//   console.log(values);
+//   let counter = 1;
+//   values.filter(item => {
+//     for (let i = 6; i < values.length; i++) {
+//       //   console.log('item', item, 'values[i]', values[i]);
+
+//       if (item[1] === values[i][1] && item[2] === values[i][2]) {
+//         if (counter) {
+//           result.push(`${item[0]} - ${values[i][0]}: 11:00 - 23:00`);
+//           counter += 1;
+//         }
+//         // console.log('item', item, 'values[i]', values[i]);
+//       } else {
+//         console.log(item);
+//         let x = item[0].toUpperCase() + ':';
+//         item[0] = x;
+
+//         const join = item.join(' ');
+//         const strFirst = join.slice(0, 11);
+//         const strLast = join.slice(-6);
+//         const rString = strFirst + '-' + strLast;
+//         result.push(rString);
+//         // console.log(result.join(''));
+//       }
+//     }
+//   });
+//   //   console.log(
+//   //     'проверка',
+//   //     'MON - WED: 11:00 - 23:00 HU - FRI: 12:00 - 23:00 SAT: 10:00 - 23:00 SUN: 11:00 - 23:00',
+//   //   );
+//   return workdays.length === 0 ? [] : result.join(' ');
+// };
+// console.log(
+//   readableTimetable([
+//     { day: 'mon', from: '11:00', to: '23:00' },
+//     { day: 'tue', from: '11:00', to: '23:00' },
+//     { day: 'wed', from: '11:00', to: '23:00' },
+//     { day: 'thu', from: '12:00', to: '23:00' },
+//     { day: 'fri', from: '12:00', to: '23:00' },
+//     { day: 'sat', from: '10:00', to: '23:00' },
+//     { day: 'sun', from: '11:00', to: '23:00' },
+//   ]),
+// );
+
+// // function testUnique(values) {
+// //   var n = values.length;
+// //   let r = true;
+// //   for (var i = 0; i < n - 1; i++) {
+// //     for (var j = i + 1; j < n; j++) {
+// //       if (values[i][1] === values[j][1] && values[i][2] === values[j][2]) {
+// //         console.log('values[i] === values[j])');
+// //          result.push(values[i]);
+// //         r = false;
+// //       } else {
+// //           result.push(values[i])
+// //       }
+// //     }
+// //   }
+// //   return r;
+// // }
+// // console.log(testUnique(values));
+
+// ANOTHER
