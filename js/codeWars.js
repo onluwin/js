@@ -190,77 +190,36 @@
 // console.log('правильное решение = camel Casing');
 
 // ANOTHER
-
-// НЕ РЕШЕНА
-
-// const readableTimetable = workdays => {
-//   const values = [];
-//   const result = [];
-//   const stack = [];
-
-//   workdays.forEach(element => {
-//     values.push(Object.values(element));
-//   });
-//   console.log(values);
-//   let counter = 1;
-//   values.filter(item => {
-//     for (let i = 6; i < values.length; i++) {
-//       //   console.log('item', item, 'values[i]', values[i]);
-
-//       if (item[1] === values[i][1] && item[2] === values[i][2]) {
-//         if (counter) {
-//           result.push(`${item[0]} - ${values[i][0]}: 11:00 - 23:00`);
-//           counter += 1;
-//         }
-//         // console.log('item', item, 'values[i]', values[i]);
-//       } else {
-//         console.log(item);
-//         let x = item[0].toUpperCase() + ':';
-//         item[0] = x;
-
-//         const join = item.join(' ');
-//         const strFirst = join.slice(0, 11);
-//         const strLast = join.slice(-6);
-//         const rString = strFirst + '-' + strLast;
-//         result.push(rString);
-//         // console.log(result.join(''));
-//       }
+// const mean3 = numbers => {
+//   let x = true;
+//   let total = numbers.reduce((acc, item) => {
+//     if (numbers.length === 0) {
+//       return null;
 //     }
-//   });
-//   //   console.log(
-//   //     'проверка',
-//   //     'MON - WED: 11:00 - 23:00 HU - FRI: 12:00 - 23:00 SAT: 10:00 - 23:00 SUN: 11:00 - 23:00',
-//   //   );
-//   return workdays.length === 0 ? [] : result.join(' ');
+//     if (item % 3 !== 0) {
+//       x = false;
+//       return null;
+//     } else {
+//       return acc + item;
+//     }
+//   }, 0);
+//   console.log('total', total);
+//   console.log('total/ numbers.length', total / numbers.length);
+//   return x ? total / numbers.length : null;
 // };
-// console.log(
-//   readableTimetable([
-//     { day: 'mon', from: '11:00', to: '23:00' },
-//     { day: 'tue', from: '11:00', to: '23:00' },
-//     { day: 'wed', from: '11:00', to: '23:00' },
-//     { day: 'thu', from: '12:00', to: '23:00' },
-//     { day: 'fri', from: '12:00', to: '23:00' },
-//     { day: 'sat', from: '10:00', to: '23:00' },
-//     { day: 'sun', from: '11:00', to: '23:00' },
-//   ]),
-// );
+// console.log(mean3([3, 5, 6, 9, 21, 3]));
 
-// // function testUnique(values) {
-// //   var n = values.length;
-// //   let r = true;
-// //   for (var i = 0; i < n - 1; i++) {
-// //     for (var j = i + 1; j < n; j++) {
-// //       if (values[i][1] === values[j][1] && values[i][2] === values[j][2]) {
-// //         console.log('values[i] === values[j])');
-// //          result.push(values[i]);
-// //         r = false;
-// //       } else {
-// //           result.push(values[i])
-// //       }
-// //     }
-// //   }
-// //   return r;
-// // }
-// // console.log(testUnique(values));
+// ANOTHER
+// function arrayDiff(a, b) {
+//   if (a.length === 0) {
+//     return [];
+//   }
+//   if (b.length === 0) {
+//     return a;
+//   }
+//   let result = a.filter(item => !b.includes(item));
+//   return result;
+// }
+// console.log(arrayDiff([1, 2, 3], [1, 2]));
 
 // ANOTHER
